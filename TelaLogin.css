@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-image: url("https://s2.glbimg.com/smbJLb6Jt92GrMIDOFacclQ7K0o=/s.glbimg.com/jo/g1/f/original/2015/05/11/poli1.jpg");
+    background-image: url("https://fastly.4sqi.net/img/general/width960/MQ2R5ZPH3MG2IQC0J1OZHZCLMEMMQTJYY4BGAFO1WWBBUYHF.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -57,7 +57,7 @@ input {
     text-align: center;
 }
 
-button {
+.button {
     border-radius: 5px;
     border-width: 1px;
     padding-left: 5px;
@@ -67,11 +67,11 @@ button {
     background-color: rgb(85, 116, 166);
     color: white;
 }
-button:hover {
+.button:hover {
     color: black;
 }
 
-button:active {
+.button:active {
     background-color: red;
     color: black;
 }
