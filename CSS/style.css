@@ -9,9 +9,16 @@ header {
 	margin: 0 auto;
 }
 
+.img {
+	max-width:200px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+}
+
 nav {
 	position: absolute;
-	top: 110px;
+	top: 100px;
 	right: 0;
 }
 
@@ -30,12 +37,24 @@ nav a {
 
 nav a:hover {
 	color: red;
-	font-size: 24px;
+	font-size: 23px;
 	text-decoration: underline;
 }
 
-.principal {
+main {
 	background: #4283A9;
+}
+
+.principal {
 	width: 940px;
-	margin: 0 auto;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.banner {
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-around; 
+
 }
