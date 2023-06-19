@@ -8,7 +8,7 @@ h1{
 color: white; 
 text-align: center;
   -webkit-text-stroke: 1px red; /* For WebKit-based browsers */
-  *text-stroke: 1px black;  /* essa marcação funciona no chrome apenas, basta descomentar quando for utilizá-la nele. */
+  /*text-stroke: 1px black;  /* essa marcação funciona no chrome apenas, basta descomentar quando for utilizá-la nele. */
 }
 .principal{
   gap: 10px;
