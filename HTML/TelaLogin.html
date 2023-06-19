@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/CSS/TelaLogin.css">
+
+    <body>
+
+        <div>
+
+            <img src="https://upe.poli.br/wp-content/uploads/2020/08/headermobile.png">
+            <h2>CADASTRO</h2>
+            <input type="login" name="login" placeholder="login" id="login">
+            <input type="password" name="senha" placeholder="senha" id="senha">
+            <input class="button" type="submit" onclick="logar()"></input>
+
+        </div>
+
+        <script>
+            /*
+            function alertar(alerta) {
+                alert(alerta);
+            }
+    
+            function mostrarNome() {
+    
+                var texto = document.querySelector('#nome').value; // ou .querySelector("input[name='nome']").value;
+                alert(texto);
+            }
+            */
+            // login simples -> admin:adimin
+    
+            function logar(){
+    
+                var login = document.getElementById('login').value;
+                var senha = document.getElementById('senha').value;
+    
+                if(login == "admin" && senha == "admin"){
+                    alert('Sucesso');
+                    location.href = "index.html";
+                }else{
+                    alert('Usuario ou senha incorretos');
+                }
+    
+            }   
+    
+        </script>
+    </body>
+
+</html>

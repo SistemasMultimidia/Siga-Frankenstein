@@ -1,0 +1,60 @@
+header {
+	background: #FFFFFF;
+	padding: 10px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.img {
+	max-width:200px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+}
+
+nav {
+	position: absolute;
+	top: 100px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: blue;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: red;
+	font-size: 23px;
+	text-decoration: underline;
+}
+
+main {
+	background: #4283A9;
+}
+
+.principal {
+	width: 940px;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.banner {
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-around; 
+
+}
