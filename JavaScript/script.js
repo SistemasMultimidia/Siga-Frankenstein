@@ -1,16 +1,16 @@
-const mbappe = document.getElementById("mbappe");
-const cr7 = document.getElementById("cr7");
-const zidane = document.getElementById("zidane");
+const mbappe = document.getElementById('mbappe');
+const cr7 = document.getElementById('cr7');
+const zidane = document.getElementById('zidane');
 
 function checarResposta(event){
 
-    console.log("checando resposta...")
+    alert("checando resposta...")
 
-    if(event.targeted.id == cr7){
-        console.log("resposta correta!")
+    if(event.target.id == 'cr7'){
+        alert("resposta correta!")
     }
     else{
-        console.log("respota incorreta!")
+        alert("respota incorreta!")
     }
 
 }
