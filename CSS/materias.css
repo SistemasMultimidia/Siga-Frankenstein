@@ -8,6 +8,26 @@ h1{
     text-align: center;
     color: red
 }
+
+/* .voltar {
+    display: flex;
+    justify-content: left;
+    padding: 2px;
+    padding-bottom: 45px;    
+}
+
+.voltar-seta {
+    position: relative;
+    width: 100;
+    height: 100;
+    left: 600px;
+}
+
+.voltar-texto {
+    font-size: 32px;
+    text-align: center;
+} */
+
 #cabecario{
     text-align: left;
     height: auto;
@@ -17,7 +37,7 @@ h1{
     top: 8px
 }
 #upe{
-    position: absolute;
+    position: relative;
     width: 200px;
     font-size: medium;
 }
