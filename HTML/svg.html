@@ -23,5 +23,18 @@
         <rect x="50" y="20" rx="20" ry="20" width="100" height="100" stroke="gold" stroke-width="4" fill="black" />
     </svg>
 
+    <h1>Canvas de Círculo</h1>
+    <canvas id="Canvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+    <script>
+
+        var c = document.getElementById("Canvas");
+        var cx = c.getContext("2d");
+        cx.beginPath();
+        cx.arc(95, 50, 40, 0, 2*Math.PI);
+        cx.stroke();
+
+    </script>
+
 </body>
 </html>
