@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+p.voando {
+    animation: 500ms voar infinite;
+}
+
+@keyframes voar {
+    from {
+        padding-left: 0%;
+    }
+    to {
+        padding-left: 100%;
+    }
+}
