@@ -5,12 +5,13 @@ body {
 p.parado {
     padding: 0;
     margin: 0;
-    margin-left: 40%;
-    color: white;
+    color: black;
+    z-index: 850;
 }
 
 p.voando {
     margin-left: 0%;
+    color: white;
     animation: 500ms voar infinite;
 }
 
