@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation do Mega Man</title>
+    <style>
+        /* Estilos para a div que conterá a sprite do Mega Man */
+        #megaman_parado {
+            width: 64px; /* Largura de cada quadro do Mega Man na sprite */
+            height: 50px; /* Altura de cada quadro do Mega Man na sprite */
+            background-image: url('megaman_idle.png');
+            background-position: 0 0; /* Posição inicial da sprite */
+        }
+
+        #megaman_andando {
+            width: 50px; /* Largura de cada quadro do Mega Man na sprite */
+            height: 50px; /* Altura de cada quadro do Mega Man na sprite */
+            background-image: url('megaman_walking.png');
+            background-position: 0 0; /* Posição inicial da sprite */
+        }
+    </style>
+</head>
+<body>
+    <!-- Div que conterá a sprite animada do Mega Man -->
+    <div id="megaman_andando"></div>
+
+    <script>
+        // Função para animar o Mega Man andando
+        function animateMegaMan() {
+            const megaman = document.getElementById('megaman_andando');
+            let frame = 0; // Inicializa o quadro da sprite
+
+            // Cria um intervalo para atualizar a animação a cada 100 milissegundos (10 quadros por segundo)
+            const animationInterval = setInterval(function() {
+                // Calcula a próxima posição da sprite
+                frame = (frame + 1) % 20; // Suponha que você tenha 10 quadros na sua sprite
+
+                // Atualiza a posição da sprite
+                megaman.style.backgroundPosition = `0px -${frame * 1000}px`; // Largura de cada quadro é 64px
+
+                if (frame === 100) {
+                    // A animação completou um ciclo, então pare o intervalo
+                    clearInterval(animationInterval);
+                }
+            }, 100); // Intervalo de 100ms para animar a 10 quadros por segundo
+        }
+
+        // Iniciar a animação quando a página carregar
+        window.onload = animateMegaMan;
+    </script>
+</body>
+</html>
+
