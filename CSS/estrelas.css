@@ -2,11 +2,19 @@ body {
     background-color: black;
 }
 
+img {
+    position: relative;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
 button {
+    position: relative;
     color: goldenrod;
     border: 2px solid goldenrod;
     background-color: gray;
     border-radius: 2px;
+    margin-top: 2px;
 }
 
 button:hover {

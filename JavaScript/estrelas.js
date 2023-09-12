@@ -11,9 +11,9 @@ function atirar() {
     estrela2.classList.toggle("voando");
 
     estrela.style.paddingTop = y;
-    y = Math.floor(Math.random() * 20) + "%";
+    y = Math.floor(Math.random() * 15) + "%";
     estrela1.style.paddingTop = y;
-    y = Math.floor(Math.random() * 20) + "%";
+    y = Math.floor(Math.random() * 15) + "%";
     estrela2.style.paddingTop = y;
 
 }
