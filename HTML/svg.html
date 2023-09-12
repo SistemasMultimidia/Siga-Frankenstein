@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Animation</title>
+    <style>
+        /* Estilos para os quadrados */
+        .square {
+            fill: blue;
+            animation: moveSquare 5s linear infinite;
+        }
+
+        .circle{
+            fill: red;
+            animation: moveCircle 5s linear infinite;
+        }
+
+        /* Animação para mover os quadrados */
+        @keyframes moveSquare {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(200px, 0);
+            }
+            50% {
+                transform: translate(200px, 200px);
+            }
+            75% {
+                transform: translate(0, 200px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        @keyframes moveCircle {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(200px, 1000px);
+            }
+            50% {
+                transform: translate(1000px, 200px);
+            }
+            75% {
+                transform: translate(0, 500px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- SVG que contém os quadrados -->
+    <svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+        <rect class="square" width="50" height="50" />
+        <<rect class="circle" width="50" height="50" />
+    </svg>
+
+</body>
+</html>
