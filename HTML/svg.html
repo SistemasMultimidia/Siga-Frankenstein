@@ -15,6 +15,19 @@
             fill: red;
             animation: moveCircle 5s linear infinite;
         }
+        #megaman_parado {
+            width: 64px; /* Largura de cada quadro do Mega Man na sprite */
+            height: 50px; /* Altura de cada quadro do Mega Man na sprite */
+            background-image: url('megaman_idle.png');
+            background-position: 0 0; /* Posição inicial da sprite */
+        }
+
+        #megaman_andando {
+            width: 50px; /* Largura de cada quadro do Mega Man na sprite */
+            height: 50px; /* Altura de cada quadro do Mega Man na sprite */
+            background-image: url('megaman_walking.png');
+            background-position: 0 0; /* Posição inicial da sprite */
+        }
 
         /* Animação para mover os quadrados */
         @keyframes moveSquare {
@@ -56,10 +69,37 @@
 </head>
 <body>
     <!-- SVG que contém os quadrados -->
-    <svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+    <svg x="100" y="100" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
         <rect class="square" width="50" height="50" />
         <<rect class="circle" width="50" height="50" />
     </svg>
+    <div id="megaman_andando"></div>
+
 
 </body>
+<script>
+    // Função para animar o Mega Man andando
+    function animateMegaMan() {
+        const megaman = document.getElementById('megaman_andando');
+        let frame = 0; // Inicializa o quadro da sprite
+
+        // Cria um intervalo para atualizar a animação a cada 100 milissegundos (10 quadros por segundo)
+        const animationInterval = setInterval(function() {
+            // Calcula a próxima posição da sprite
+            frame = (frame + 1) % 20; // Suponha que você tenha 10 quadros na sua sprite
+
+            // Atualiza a posição da sprite
+            megaman.style.backgroundPosition = `0px -${frame * 1000}px`; // Largura de cada quadro é 64px
+
+            if (frame === 100) {
+                // A animação completou um ciclo, então pare o intervalo
+                clearInterval(animationInterval);
+            }
+        }, 100); // Intervalo de 100ms para animar a 10 quadros por segundo
+    }
+
+    // Iniciar a animação quando a página carregar
+    window.onload = animateMegaMan;
+</script>
+
 </html>
