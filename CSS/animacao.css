@@ -1,0 +1,20 @@
+#sprite {
+    width: 100px;
+    height: 100px;
+    background-image: url('/img/sonic/correndo1/sonic_correndo1.png'); /* Substitua 'spritesheet.png' pelo seu arquivo de sprite. */
+    background-size: 1200% 100%;
+    /*animation: run-animation 0.4s steps(11) infinite;*/
+    animation: run-animation 0.4s linear infinite alternate;
+
+}
+
+@keyframes run-animation {
+    from {
+        background-position: 0% 0%;
+        left: 0;
+    }
+    to {
+        background-position: 100% 0%;
+        left: calc(100% - 50px);
+    }
+}
