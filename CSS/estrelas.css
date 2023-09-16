@@ -23,6 +23,15 @@ div.wrapper {
     padding: 0;
 }
 
+div.rodapé {
+    border-top: 5px double black;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    right: 0;
+    background-color: white;
+}
+
 h1.titulo {
     color: white;
     text-align: center;
