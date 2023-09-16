@@ -10,6 +10,53 @@
 <script src="../JavaScript/estrelas.js"></script>
 <link rel="stylesheet" href="/CSS/estrelas.css">
 
+<style>
+    .square {
+        fill: blue;
+        animation: moveSquare 5s linear infinite;
+    }
+
+    .circle{
+        fill: red;
+        animation: moveCircle 5s linear infinite;
+    }
+    @keyframes moveSquare {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(200px, 0);
+        }
+        50% {
+            transform: translate(200px, 200px);
+        }
+        75% {
+            transform: translate(0, 200px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+    @keyframes moveCircle {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(200px, 1000px);
+        }
+        50% {
+            transform: translate(1000px, 200px);
+        }
+        75% {
+            transform: translate(0, 500px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+</style>
+
 <body>
 
     <audio src="../img/Chad Theme.mp3" autoplay loop></audio>
@@ -48,12 +95,19 @@
 
     <button class="buttonCanvas" onclick=animarCanvas()>Animar Canvas</button>
 
+    <svg x="100" y="100" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+        <rect class="square" width="50" height="50" />
+        <<rect class="circle" width="50" height="50" />
+    </svg>
+
+    <div class="monster"></div>
+
     <div class="rodapé">
         <p>Denilson</p>
         <p>Gabriel</p>
         <p>Hugo</p>
         <p>Rennan de Abreu e Lima Januario Silva</p>
-        <p>Valdir</p>
+        <p>Valdir de Carvalho Canova</p>
         <p>Vinícius</p>
     </div>
 

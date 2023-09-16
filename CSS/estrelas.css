@@ -108,3 +108,15 @@ p.voando {
         padding-left: 98%;
     }
 }
+
+.monster {
+    width: 70px;
+    height: 150px;
+    margin: 2% auto;
+    background: url('https://assets-blog.hostgator.com.br/wp-content/uploads/2015/06/megaman-sprite.webp') left center;
+    animation: play 1s steps(25) infinite;
+  }
+  
+  @keyframes play {
+    100% { background-position: -1900px; }
+  }
