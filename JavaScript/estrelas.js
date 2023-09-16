@@ -32,6 +32,36 @@ function atirar() {
 
 }
 
-function animarCanvas() {
+function ativarCanvas() {
+
+    var q = document.getElementById("quadrângulo");
+    var t = document.getElementById("triângulo");
+    var c = document.getElementById("círculo");
+
+    var qtx = q.getContext("2d");
+    var ttx = t.getContext("2d");
+    var ctx = c.getContext("2d");
+
+    qtx.beginPath();
+    qtx.moveTo(50, 20);
+    qtx.lineTo(200, 25);
+    qtx.lineTo(170, 100);
+    qtx.lineTo(30, 120);
+    qtx.lineTo(50, 20);
+    qtx.strokeStyle = "green";
+    qtx.stroke();
+
+    ttx.beginPath();
+    ttx.moveTo(220, 100);
+    ttx.lineTo(250, 180);
+    ttx.lineTo(190, 150);
+    ttx.lineTo(220, 100);
+    ttx.strokeStyle = "blue";
+    ttx.stroke();
     
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+
 }
