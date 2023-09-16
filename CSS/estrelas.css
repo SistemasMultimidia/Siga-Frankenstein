@@ -13,11 +13,14 @@ div.canva {
     border: 2px solid white;
     height: auto;
     display: grid;
+    gap: 0;
     z-index: 900;
 }
 
 div.wrapper {
     border: 0px solid red; /* Borda de teste */
+    margin: 0;
+    padding: 0;
 }
 
 h1.titulo {
@@ -29,6 +32,8 @@ canvas {
     border: 1px solid white;
     height: 350px;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -40,7 +45,7 @@ button {
     padding: 2px;
     color: goldenrod;
     border: 2px solid goldenrod;
-    background-color: gray;
+    background-color: red;
     border-radius: 3px;
     margin-top: 2px;
 }
@@ -54,6 +59,23 @@ button:hover {
 button:active {
     color: aliceblue;
     background-color: turquoise;
+}
+
+button.buttonCanvas {
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(40deg, red, crimson, darkRed);
+    border: 0;
+    border-radius: 3px;
+    margin-top: 2px;
+}
+
+button.buttonCanvas:hover {
+    background-image: linear-gradient(40deg, deepSkyBlue, blue, darkBlue);
+}
+
+button.buttonCanvas:active {
+    background-image: linear-gradient(40deg, green, forestGreen, darkGreen);
 }
 
 p.parado {

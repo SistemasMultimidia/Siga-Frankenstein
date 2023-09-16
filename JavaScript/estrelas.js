@@ -31,3 +31,7 @@ function atirar() {
     estrela6.style.paddingTop = y;
 
 }
+
+function animarCanvas() {
+    
+}
