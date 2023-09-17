@@ -110,13 +110,17 @@ p.voando {
 }
 
 .megaman {
-    width: 70px;
-    height: 150px;
+    width: 310px;
+    height: 390px;
     margin: 2% auto;
-    background: url('https://assets-blog.hostgator.com.br/wp-content/uploads/2015/06/megaman-sprite.webp') left center;
-    animation: play 1s steps(25) infinite;
+
+    background: url(/img/Megaman/megaman_walking.jpg) left center;
+    animation: play 1s steps(3) infinite;
   }
   
   @keyframes play {
-    100% { background-position: -1900px; }
+    
+    from{
+        
+    }
   }
